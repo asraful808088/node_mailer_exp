@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 400px;
+      }
+      label {
+        width: 100%;
+      }
+      label input {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <label>
+        <label>
+          <p>Your name</p>
+          <input type="text" name="" id="Your-name" required />
+        </label>
+        <p>Receiver Email</p>
+        <input type="text" name="" id="Receiver-Email" required />
+      </label>
+      <label>
+        <p>Subject</p>
+        <input type="text" name="" id="Subject" required />
+      </label>
+      <label>
+        <p>Receiver name</p>
+        <input type="text" name="" id="Receiver-name" required />
+      </label>
+      <label>
+        <p>Receiver name</p>
+        <textarea name="" id="message" cols="30" rows="10">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti aut facilis accusamus molestiae iure minima repellat sed aliquid repudiandae dolor necessitatibus consequuntur nobis repellendus, fugit quidem mollitia. Natus, commodi temporibus.
+        Tenetur quo autem ex a quod harum maxime repudiandae dolor doloribus sapiente magni alias doloremque esse, natus consequatur et commodi. Fugiat sed, mollitia necessitatibus dolorem beatae amet ipsa nisi explicabo.
+        Mollitia ab expedita incidunt tempore laudantium ratione odit. Incidunt voluptates voluptatum illo magni. Praesentium minima ipsum dignissimos repellendus? Error aliquid cumque ratione at mollitia blanditiis, quo natus ipsam nemo expedita.
+        Obcaecati, quisquam explicabo. Eaque nulla esse alias expedita quam? Deleniti quas laborum aut nulla doloremque amet nostrum dolorem voluptatum blanditiis error. Corrupti delectus laboriosam ex neque quibusdam quas, ut aut.
+        Temporibus ducimus aut placeat doloribus magnam nostrum itaque corrupti. Dignissimos sint reprehenderit aliquam totam hic. In tempore similique perferendis nam, voluptatum odio doloribus iste ipsam dolores id labore nemo incidunt?
+        Temporibus doloremque culpa quisquam quia, suscipit aliquam asperiores voluptatem dolores corporis optio. Totam aliquid, blanditiis culpa praesentium quo molestias ratione neque amet incidunt repellat deserunt ex sequi magnam! Provident, laudantium.
+        Quaerat hic dolore illo inventore, similique numquam facilis id incidunt unde deserunt iusto, possimus tempore animi modi soluta sint maiores aliquam, eaque amet eligendi nam distinctio cupiditate delectus optio? Aliquid!
+        Nulla, voluptates tempore maiores fuga odit repudiandae, corporis dolores, aliquam ullam repellendus quam. Quia veniam molestias dicta recusandae labore quos ex error, obcaecati, totam accusamus optio rerum sunt laboriosam incidunt!
+        Nesciunt iure consequatur esse exercitationem quod perspiciatis molestiae hic culpa eos. Qui voluptates tempora debitis ab obcaecati? Soluta suscipit quibusdam illo omnis accusamus, sit nemo modi beatae iure ea nostrum!
+        Velit eius nesciunt vel numquam voluptatum neque earum nulla laborum consequatur! Odio dolorum dolor adipisci cupiditate commodi quam labore neque ducimus, repudiandae blanditiis veritatis animi! Recusandae facere iste culpa dignissimos.
+        Accusamus temporibus obcaecati deserunt, laudantium quaerat dolor ut maxime quam quod distinctio qui consectetur odit delectus assumenda dolorum cum fugit rerum nulla mollitia, inventore ex. Amet debitis nisi tenetur corrupti.
+        Praesentium molestias beatae soluta veritatis. Magnam odio, voluptatum debitis recusandae ex consequatur, odit, similique quis officia quod itaque rerum! Blanditiis aliquam tempore consectetur nulla inventore, rem temporibus voluptate similique totam.
+        Dolore magni nam assumenda veniam iure distinctio illo, corrupti doloremque voluptate animi. Debitis velit amet iste mollitia facilis, impedit unde corporis cumque voluptatum necessitatibus ipsum beatae. Quis magni veritatis doloribus.
+        Enim vitae quia dolor, nisi pariatur dicta, delectus, repellat sit dolorum amet qui sequi non. Qui similique quisquam officiis nisi, sed dicta omnis doloremque ex non illo debitis dolorem corporis.
+        Autem numquam nisi dolorum. Porro ut quas praesentium. Vel cumque, molestias dignissimos pariatur harum excepturi mollitia ab, quaerat numquam voluptatibus at sed similique obcaecati accusantium sunt, rem porro consequuntur reprehenderit?
+        Aperiam maiores temporibus debitis amet dignissimos tempore maxime quisquam nostrum sapiente a, soluta earum officiis modi cupiditate unde ut. Earum aut exercitationem fugiat velit sapiente modi tenetur aliquam voluptatibus necessitatibus?
+        Ut veniam doloremque praesentium inventore commodi repellat eos. Reprehenderit sint exercitationem voluptatem necessitatibus animi eaque odit inventore nostrum, blanditiis amet natus quod enim harum, illum laboriosam. Quibusdam, adipisci dolorem! Fugit.
+        Illum sequi voluptate ut nulla dolorem labore sunt ipsam sit nesciunt corporis libero blanditiis, ipsa ex id non numquam vel. Expedita totam quam eveniet nemo molestiae, asperiores obcaecati fugiat voluptate!
+        At molestiae quaerat natus atque vitae reprehenderit accusantium ut, obcaecati est recusandae ratione a similique incidunt id harum eaque voluptas vero. Quasi nihil, ratione fugit molestiae illum nisi saepe porro. </textarea
+        >
+      </label>
+
+      <button onclick="send_data()">Send</button>
+    </div>
+    <div id="result"></div>
+  </body>
+  <script>
+    const yourName = document.getElementById("Your-name");
+    const receEmail = document.getElementById("Receiver-Email");
+    const receName = document.getElementById("Receiver-name");
+    const message = document.getElementById("message");
+    const sub = document.getElementById("Subject");
+    const result = document.getElementById("result");
+    function send_data() {
+      const asdasd = new FormData();
+      fetch("http://localhost:5000/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: yourName.value,
+          receEmail: receEmail.value,
+          receName: receName.value,
+          sub: sub.value,
+          message: message.value,
+        }),
+      })
+        .then((r) => {
+          result.innerHTML = "success";
+        })
+        .catch((err) => {
+          result.innerHTML = "failed";
+        });
+    }
+  </script>
+</html>

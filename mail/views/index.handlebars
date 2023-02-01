@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Official</title>
+    <style>
+      * { padding: 0; margin: 0; box-sizing: border-box; } .header { width:
+      900px; height: auto; position: relative; height: 300px; margin: auto;
+      margin-top: 50px; } .header img { position: absolute; } .main { width:
+      900px; padding: 10px; margin: auto; background-color: antiquewhite;
+      border-radius: 20px; margin-top: 50px; padding-left: 20px; padding-right:
+      20px; } .main .user-name { font-size: 25px; margin-top: 20px;
+      margin-bottom: 20px; font-weight: 900; } .main .user-sub { font-size:
+      22px; font-weight: 900; margin-bottom: 20px; } .main .email-body {
+      font-size: 20px; } .main .footer { font-size: 18px; font-weight: 900;
+      margin-top: 20px; margin-bottom: 10px; } .main .org-name { margin-bottom:
+      20px; font-size: 15px; font-weight: 900; }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="cid:header" alt="" height="100%" width="100%" />
+    </div>
+    <div class="main">
+      <div class="user-name">Dear {{receiverName}}</div>
+      <div class="user-sub">subject: {{sub}}</div>
+      <div class="email-body">
+        {{message}}
+        
+      </div>
+      <div class="footer">Best Regards</div>
+      <div class="org-name"><a href="">{{yourName}}</a></div>
+    </div>
+  </body>
+</html>
